@@ -11,7 +11,7 @@ class Perceptron:
     z = np.dot(inputs, weights)        # z = w * x in matrix format
     return np.where(z>0, 1, 0)         # 0 is threshold value here
 
-  def fit(self, x, y):
+  def fit(self, X, y):
     self.X=X
     self.y=y
 
