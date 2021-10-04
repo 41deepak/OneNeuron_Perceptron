@@ -6,6 +6,7 @@ import joblib   #to save model as binary file, also can use pickle
 from matplotlib.colors import ListedColormap
 import os
 plt.style.use("fivethirtyeight")
+from sklearn import preprocessing
 
 def prepare_data(df):
   X = df.drop("y", axis=1)
